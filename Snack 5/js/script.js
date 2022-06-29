@@ -8,13 +8,16 @@
 
 
 function verificaLunghezzaTraDueParole (parola1, parola2){
+    let result = "";
     if (parola1.length > parola2.length){
-        return console.log("La parola più lunga è: " + parola1);
+        result = "La parola più lunga è: " + parola1;
         } else if (parola2.length > parola1.length){
-            return console.log("La parola più lunga è: " + parola2);
+            result = "La parola più lunga è: " + parola2;
             } else {
-                return console.log("Le due parole hanno la stessa lunghezza: " + parola1 + " " + parola2);
+                result = "Le due parole hanno la stessa lunghezza: " + parola1 + " " + parola2;
                 }
+    
+    return
 }
 
 const primaParola = prompt("Inserisci la prima parola")
@@ -23,4 +26,5 @@ console.log("Prima parola: " + primaParola)
 const secondaParola = prompt("Inserisci la seconda parola")
 console.log("Seconda parola: " + secondaParola)
 
-verificaLunghezzaTraDueParole(primaParola, secondaParola);
+let risultato = verificaLunghezzaTraDueParole(primaParola, secondaParola);
+console.log(risultato);
